@@ -48,7 +48,7 @@ app.layout = html.Div([
                 dcc.Dropdown(
                     id='dropdown-BR',
                     options=[
-                        {'label': row['station_name_tw'], 'value': row['index']}
+                        {'label': row['station_name_tw']+row['station_name_en'], 'value': row['index']}
                         for index, row in mrt[0:24].iterrows()
                     ]
                 ),
@@ -67,7 +67,7 @@ app.layout = html.Div([
                 dcc.Dropdown(
                     id='dropdown-R',
                     options=[
-                        {'label': row['station_name_tw'], 'value': row['index']}
+                        {'label': row['station_name_tw']+row['station_name_en'], 'value': row['index']}
                         for index, row in mrt[24:52].iterrows()
                     ]
                 ),
@@ -86,7 +86,7 @@ app.layout = html.Div([
                 dcc.Dropdown(
                     id='dropdown-G',
                     options=[
-                        {'label': row['station_name_tw'], 'value': row['index']}
+                        {'label': row['station_name_tw']+row['station_name_en'], 'value': row['index']}
                         for index, row in mrt[52:72].iterrows()
                     ]
                 ),
@@ -105,7 +105,7 @@ app.layout = html.Div([
                 dcc.Dropdown(
                     id='dropdown-O',
                     options=[
-                        {'label': row['station_name_tw'], 'value': row['index']}
+                        {'label': row['station_name_tw']+row['station_name_en'], 'value': row['index']}
                         for index, row in mrt[72:98].iterrows()
                     ]
                 ),
@@ -124,7 +124,7 @@ app.layout = html.Div([
                 dcc.Dropdown(
                     id='dropdown-BL',
                     options=[
-                        {'label': row['station_name_tw'], 'value': row['index']}
+                        {'label': row['station_name_tw']+row['station_name_en'], 'value': row['index']}
                         for index, row in mrt[98:121].iterrows()
                     ]
                 ),
@@ -143,7 +143,7 @@ app.layout = html.Div([
                 dcc.Dropdown(
                     id='dropdown-Y',
                     options=[
-                        {'label': row['station_name_tw'], 'value': row['index']}
+                        {'label': row['station_name_tw']+row['station_name_en'], 'value': row['index']}
                         for index, row in mrt[121:135].iterrows()
                     ]
                 ),
@@ -162,7 +162,7 @@ app.layout = html.Div([
                 dcc.Dropdown(
                     id='dropdown-A',
                     options=[
-                        {'label': row['station_name_tw'], 'value': row['index']}
+                        {'label': row['station_name_tw']+row['station_name_en'], 'value': row['index']}
                         for index, row in mrt[135:156].iterrows()
                     ]
                 ),
