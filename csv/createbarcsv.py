@@ -1,6 +1,10 @@
 import csv
 import pandas as pd
+
+#create csv
 path='bar.csv'
+
+#write csv
 with open(path,'w',newline='',encoding="utf-8") as csvfile:
     writer=csv.writer(csvfile)
     writer.writerow(['name','allmap','map','lat','lon','insof','insplace'])
@@ -991,15 +995,11 @@ with open(path,'w',newline='',encoding="utf-8") as csvfile:
                      'https://www.instagram.com/thetenderland_taipei/',
                      'https://www.instagram.com/explore/locations/1029800321/'])
     
+    # close csv
     csvfile.close()
     
+    # add index column
     bar=pd.read_csv('bar.csv',header=0)
     bar=bar.rename_axis('index').reset_index()
     store=pd.DataFrame(bar)
     store.to_csv(path,encoding='utf-8')
-
-    '''import pandas as pd
-    pd.set_option('display.max_rows',100)
-    bar=pd.read_csv('bar.csv')
-    bardata=pd.DataFrame(bar)
-    print(bardata.duplicated(subset=['name']))'''
