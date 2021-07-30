@@ -5,14 +5,17 @@ from dash.dependencies import Input, Output
 import pandas as pd
 from tool import *
 
+# create dash application
 app = dash.Dash(__name__)
 server = app.server
 
+# convert csv data to dataframe
 mrtdata=pd.read_csv('mrt.csv',header=0)
 bardata=pd.read_csv('bar.csv',header=0)
 mrt=pd.DataFrame(mrtdata)
 bar=pd.DataFrame(bardata)
 
+# create web layout
 app.layout = html.Div([
     dcc.Location(id='url'),
     dcc.Link('T A I P E I', href='/', style=tab_styleb),
@@ -112,7 +115,7 @@ app.layout = html.Div([
             ]
         ),
 
-        # Tab B
+        # Tab BL
         html.Div(
             id='BL',
             style={'display': 'none'},
@@ -172,7 +175,7 @@ app.layout = html.Div([
     ])
 ],style={'width':'100%','display':'inline-block','textAlign':'center'})
 
-
+# add callback
 def generate_display_tab(tab):
     def display_tab(pathname):
         if tab == 'TAIPEI' and (pathname is None or pathname == '/'):
@@ -201,6 +204,7 @@ for idd in noo:
         generate_display_tab(idd)
     )
 
+# Tab BR
 @app.callback(
     Output('display-BR', 'children'),
     [Input('dropdown-BR', 'value')])
@@ -229,6 +233,7 @@ def display_value(value):
     god+=[html.Br(),html.Br(),d,c,html.Br(),html.Br(),]
     return (god)
 
+# Tab R
 @app.callback(
     Output('display-R', 'children'),
     [Input('dropdown-R', 'value')])
@@ -257,6 +262,7 @@ def display_value(value):
     god+=[html.Br(),html.Br(),d,c,html.Br(),html.Br(),]
     return (god)
 
+# Tab G
 @app.callback(
     Output('display-G', 'children'),
     [Input('dropdown-G', 'value')])
@@ -285,6 +291,7 @@ def display_value(value):
     god+=[html.Br(),html.Br(),d,c,html.Br(),html.Br(),]
     return (god)
 
+# Tab O
 @app.callback(
     Output('display-O', 'children'),
     [Input('dropdown-O', 'value')])
@@ -313,6 +320,7 @@ def display_value(value):
     god+=[html.Br(),html.Br(),d,c,html.Br(),html.Br(),]
     return (god)
 
+# Tab BL
 @app.callback(
     Output('display-BL', 'children'),
     [Input('dropdown-BL', 'value')])
@@ -341,6 +349,7 @@ def display_value(value):
     god+=[html.Br(),html.Br(),d,c,html.Br(),html.Br(),]
     return (god)
 
+# Tab Y
 @app.callback(
     Output('display-Y', 'children'),
     [Input('dropdown-Y', 'value')])
@@ -369,6 +378,7 @@ def display_value(value):
     god+=[html.Br(),html.Br(),d,c,html.Br(),html.Br(),]
     return (god)
 
+# Tab A
 @app.callback(
     Output('display-A', 'children'),
     [Input('dropdown-A', 'value')])
