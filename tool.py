@@ -8,8 +8,6 @@ from math import radians, cos, sin, asin, sqrt
 # convert csv to dataframe
 bardata=pd.read_csv('bar.csv')
 bar=pd.DataFrame(bardata)
-
-# for speed purposes
 MAX_RECORDS=1000
 
 # create dash application
