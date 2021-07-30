@@ -1,11 +1,7 @@
-# PTT Crawler Visualization Web
+# [Taipei Bar Map](https://tpe-bar-god.herokuapp.com/)
 
-* 這是一個用 Flask, Bootstrap, SQLite, D3.js 架設並部署在 Azure 的 Ptt 爬蟲資料視覺化網站。
-
-![home](./static/img/3.PNG)
-![demo](./static/img/4.gif)
-
-## 功能:
+* Using SQLite, asyncio, pandas, pyquery, requests to build a crawler and deploy on Heroku with connected to Line ChatBot.
+* 這是一個用 Flask, Bootstrap, SQLite, D3.js 架設並部署在 Azure 的 Ptt 爬蟲資料視覺化網站
 * 使用者登入功能(Flask-login)
 * 響應式(RWD)網站設計
 * 目前DB共有五個板名，HatePolitics(政黑板)、Beauty(表特板)、Soft_Job(軟體板)、NBA、Stock(股票板)、Tech_Job(科技板)
@@ -16,28 +12,22 @@
 * 部署到 Azure web services (目前因金錢原因取消部署)
 * Jieba斷詞與文字雲(wordcloud)顯示 (因速度效能遇到障礙而取消)
 
-## 使用技術與工具
-* 前端:
-    - HTML5
-    - CSS3
-    - jquery
-    - [Bootstrap(4.5.2)](https://getbootstrap.com/)
-* 後端:
-    - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
-        - Flask_paginate
-        - Flask-login
-        - login_required
-        - jieba斷詞
-        - wordcloud文字雲
-* 資料庫:
-    - [SQLite](https://www.sqlite.org/index.html)
-* 部署:
-    - [Azure](https://azure.microsoft.com/zh-tw/)
+## Built With
+* python
+  - csv
+  - numpy
+  - pandas
+* CSS
+* Folium
+* Dash
+* Flask
+* Heroku
 
-## 演示步驟與展示圖片
+## Getting Started
 
 * 尚未有帳號密碼，所以導至登入頁面
 <img src='./static/img/1.PNG' width='750px'>
+![demo](./static/img/4.gif)
 
 * 登入成功後，進到首頁
 <img src='./static/img/2.PNG' width='750px'>
