@@ -13,7 +13,7 @@
 * Flask
 * Heroku
 
-## Getting Started
+## Get Started
 
 * Check locations of MRT stations and bars by Folium map
 ![demo](./readmegif/map.gif)
