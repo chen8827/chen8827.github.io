@@ -4,6 +4,7 @@ import pandas as pd
 # read csv and make modification to match built-in color
 mrtdata=pd.read_csv('basic/mrt.csv')
 bardata=pd.read_csv('basic/bar.csv')
+MAX_RECORDS=1000
 mrtdata.replace('BR','darkred',inplace=True)
 mrtdata.replace('R','red',inplace=True)
 mrtdata.replace('G','green',inplace=True)
@@ -11,9 +12,6 @@ mrtdata.replace('O','orange',inplace=True)
 mrtdata.replace('BL','blue',inplace=True)
 mrtdata.replace('Y','yellow',inplace=True)
 mrtdata.replace('A','purple',inplace=True)
-
-# for speed purposes
-MAX_RECORDS=1000
   
 # create empty map zoomed in
 SET_COORDINATES = (25.0476226,121.5137289)
