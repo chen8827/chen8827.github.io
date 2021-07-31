@@ -1,4 +1,4 @@
-# [Taipei Bar Map](https://tpe-bar-god.herokuapp.com/)
+# [Taipei Bar Map Web App](https://tpe-bar-god.herokuapp.com/)
 
 * Used python, CSS, Folium, Dash, and Flask to build an multi-page app for bar searching by mrt station and deployed on Heroku.
 
