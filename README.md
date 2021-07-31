@@ -3,7 +3,7 @@
 * Used python, CSS, Folium, Dash, and Flask to build a multi-page app for Taipei bar searching by MRT station and deployed web app on Heroku.
 
 ## Built With
-* python
+* Python
   - csv
   - numpy
   - pandas
