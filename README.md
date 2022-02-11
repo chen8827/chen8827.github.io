@@ -26,5 +26,5 @@
 * Choose the MRT station to see bar options and explore more bars on Google and Instagram.
 ![demo](./readmegif/explore.gif)
 
-* Choose a bar to see its location, business time, officil Instagram page, and Instagram posts with its location tagging.
+* Choose a bar to see its location, business time, official Instagram page, and Instagram posts with its location tagging.
 ![demo](./readmegif/bar.gif)
